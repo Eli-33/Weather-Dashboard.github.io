@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/CSS/style.css"></link>
+</head>
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Weather Dashboard</a>
+          </nav>
+    </header>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-sm-4">
+                    <div class="card side">
+                       <div class="card-body">
+                          <h3 class="card-title">search for a city</h3>
+                          <input id="city-input"type="text" placeholder="Search.." name="search">
+                          <button  id="find-city"type="submit"><i class="fa fa-search"></i></button>
+                       </div>
+                        <!-- cities name will be here -->
+                        <div id="city-view" class="searchedC"></div> 
+                    </div>
+                </div>  
+             <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-body">
+                              <div class="city"></div>
+                              <div id="currentDay"></div>
+                              <div class="tempF"></div>
+                              <div class="humidity"></div>
+                              <div class="wind"></div>
+                              <div class="UV"></div>
+                         </div>
+                   </div>
+                        <div class="col-sm-8">
+                            <h3>5 Day Forecast:</h3>
+                            <div id="forecasts"></div>
+                            <div id="box">  
+                                <div id="date"></div>
+                                <div id="icon"></div>
+                                <div id="Ntemp"></div>
+                                <div id="Nhumidity"></div>
+                            </div>
+                       </div>  
+                  </div>   
+            </div>           
+        </div>
+    </div>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script rel="text/javascript" src="Assets/JS/java.js"></script>
+</body>
+</html>
